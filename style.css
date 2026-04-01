@@ -1,0 +1,186 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+}
+
+/* Layout */
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+/* Glass effect */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sidebar li:hover,
+.sidebar .active {
+  background: rgba(59,130,246,0.5);
+}
+
+.sidebar i {
+  margin-right: 10px;
+}
+
+.avatars img {
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+/* Main */
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+}
+
+.header input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.profile {
+  border-radius: 50%;
+}
+
+/* Banner */
+.banner {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.banner button {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background: #3b82f6;
+  color: white;
+}
+
+/* Tasks */
+.tasks-header {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tasks-header button {
+  background: #3b82f6;
+  border: none;
+  height: 30px;
+  align-items: center;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+}
+
+/* Input */
+.task-input input {
+  display: flex;
+  width: 80%;
+  padding: 12px;
+  border-radius: 20px;
+  border: none;
+  margin: 10px;
+}
+
+/* Task Cards */
+.task-card {
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.task-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Delete */
+.delete-btn {
+  background: red;
+  border: none;
+  padding: 6px;
+  border-radius: 6px;
+  color: white;
+}
+
+/* Right panel */
+.right {
+  width: 260px;
+  padding: 20px;
+}
+
+/* Calendar */
+#calendar {
+  margin-bottom: 20px;
+}
+
+.calendar-day {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  padding: 5px;
+  margin: 2px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.calendar-day:hover {
+  background: #3b82f6;
+}
+
+/* Activity */
+.activity p {
+  margin: 10px 0;
+}
+
+/* Bounce animation */
+@keyframes bounceIn {
+  0% { transform: scale(0.7) translateY(20px); opacity: 0; }
+  60% { transform: scale(1.05) translateY(-10px); }
+  100% { transform: scale(1); }
+}
+
+.bounce {
+  animation: bounceIn 0.5s ease;
+}

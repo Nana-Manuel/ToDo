@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+  <title>Todo Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+   <!-- Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Sidebar -->
+  <aside class="sidebar glass">
+    <h2>Valo</h2>
+
+    <ul>
+      <li class="active"><i class="fas fa-home"></i> Dashboard</li>
+      <li><i class="fas fa-chart-line"></i> Activity</li>
+      <li><i class="fas fa-tasks"></i> Tasks</li>
+      <li><i class="fas fa-envelope"></i> Messages</li>
+      <li><i class="fas fa-users"></i> Teams</li>
+      <li><i class="fas fa-cog"></i> Settings</li>
+    </ul>
+
+    <div class="members">
+      <p>Members</p>
+      <div class="avatars">
+        <img src="https://i.pravatar.cc/40?img=1">
+        <img src="https://i.pravatar.cc/40?img=2">
+        <img src="https://i.pravatar.cc/40?img=3">
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main -->
+  <main class="main">
+
+    <!-- Header -->
+    <div class="header glass">
+      <h1>Dashboard</h1>
+      <input type="text" placeholder="Search anything...">
+      <img class="profile" src="https://i.pravatar.cc/40?img=5">
+    </div>
+
+    <!-- Banner -->
+    <div class="banner glass">
+      <h2>Choose the plan that's right for your team</h2>
+      <button>Upgrade Plan</button>
+    </div>
+
+    <!-- Tasks -->
+    <div class="tasks-header">
+      <h2>Tasks</h2>
+      <button onclick="addTask()">+ Add Task</button>
+    </div>
+
+    <div class="task-input">
+      <input id="taskInput" placeholder="Enter task...">
+    </div>
+
+    <div id="taskList" class="task-list"></div>
+
+  </main>
+
+  <!-- Right Panel -->
+  <aside class="right glass">
+
+    <h3>Calendar</h3>
+    <div id="calendar"></div>
+
+    <h3>Today's Activity</h3>
+    <div class="activity">
+      <p><i class="fas fa-check-circle"></i> Standup Meeting</p>
+      <p><i class="fas fa-paint-brush"></i> Design Review</p>
+      <p><i class="fas fa-code"></i> API Development</p>
+    </div>
+
+  </aside>
+
+</div>
+
+<script src="script.js"></script>
+    
+</body>
+</html>
+
+
